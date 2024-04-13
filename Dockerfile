@@ -8,9 +8,6 @@ RUN npm install -g pnpm && pnpm install
 
 COPY . .
 
-RUN pnpm run build
-
-EXPOSE 3000 
-
-CMD ["pnpm", "start"]
+#start a development environment
+CMD ["pnpm", "run","dev"]
 
