@@ -18,7 +18,6 @@ import data from "@/public/ui/utils/stores.json";
 const Stories = () => {
   return (
     <section className="p-8 bg-slate-50 ">
-      <h1 className="py-4">Excerpts and Anecdotes</h1>
       <Carousel>
         <CarouselContent>
           {data.excerpts.map((excerpt: Excerpt, index: number) => (
