@@ -75,7 +75,7 @@
   }
 }
 /* TODO: Perhaps nav */
-section,
+
 main,
 nav {
   @apply max-w-7xl mx-auto py-8;
@@ -91,4 +91,14 @@ h1 {
 
 h2 {
   @apply scroll-m-20 border-b pb-2 text-3xl font-semibold transition-colors tracking-tight first:mt-0;
+}
+
+.custom-main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
