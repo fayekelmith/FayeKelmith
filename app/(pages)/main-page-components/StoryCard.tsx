@@ -7,19 +7,21 @@ interface StoryCardProps {
 }
 const StoryCard = (props: StoryCardProps) => {
   return (
-    <Card className="p-12">
-      <CardContent className="text-2xl">
-        <p className="">{props.story}</p>
+    <Card className="p-12 bg-slate-100 my-4 shadow-md">
+      <CardContent className="">
+        <p className="text-2xl">{props.story}</p>
         <div className="text-right text-xl">
           <p className="">{props.author}</p>
         </div>
-      </CardContent>
-      <CardFooter>
-        {/* <Button>Paint</Button> */}
         <p>
           Source : <span>{props.story}</span>
         </p>
-      </CardFooter>
+        <p>
+          <Button variant="outline">Generate</Button> an Image with{" "}
+          <code>DALL-E</code>
+        </p>
+      </CardContent>
+      <CardFooter></CardFooter>
     </Card>
   );
 };

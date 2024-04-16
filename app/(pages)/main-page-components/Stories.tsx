@@ -13,11 +13,11 @@ type Excerpt = {
   source: string;
 };
 
-import * as data from "@/public/ui/utils/stores.json";
+import data from "@/public/ui/utils/stores.json";
 // TODO: Annimate the stories to slide
 const Stories = () => {
   return (
-    <section className="my-8 bg-slate-50">
+    <section className="p-8 bg-slate-50 ">
       <h1 className="py-4">Excerpts and Anecdotes</h1>
       <Carousel>
         <CarouselContent>
@@ -31,8 +31,8 @@ const Stories = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hover:bg-slate-300 shadow-md" />
+        <CarouselNext className="hover:bg-slate-300 shadow-md" />
       </Carousel>
     </section>
   );

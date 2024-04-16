@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
   return (
@@ -10,7 +10,7 @@ const NavBar = () => {
         <Link href="/">Kelmith</Link>
       </h1>
 
-      <div className="hidden">
+      <div className="hidden sm:block">
         <Link href="/projects" className="">
           <Button variant="outline">Projects</Button>
         </Link>
