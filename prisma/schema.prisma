@@ -37,7 +37,7 @@ model Project{
  }
  model Message{
   id String @id @default(uuid())
-  sender String @default("Unknown")
+  sender String? @default("Unknown")
   content String
   contact String?
   createdAt DateTime @default(now())

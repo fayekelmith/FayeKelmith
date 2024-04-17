@@ -7,7 +7,6 @@ const prisma = new PrismaClient();
 export async function GET() {
   try {
     const allStories = await prisma.stories.findMany();
-    console.log("Stories fetched: ", allStories);
     return NextResponse.json({ stories: allStories }, { status: 200 });
   } catch (e) {
     console.log("Error fetching stories: ", e);

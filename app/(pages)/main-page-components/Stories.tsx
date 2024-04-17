@@ -52,11 +52,10 @@ const Stories = () => {
 
 export default Stories;
 
-//FIXME: ship this out to a hook
+//FIXME: ship this out to a hook and handle loading and error states
 const getStories = async () => {
   try {
     const res = await axios.get("/api/stories");
-    console.log("Stories fetched: ", res);
     return res.data;
   } catch (error) {
     console.log("Error fetching stories: ", error);
