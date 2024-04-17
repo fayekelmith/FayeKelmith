@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import axios from "axios";
 
 const formSchema = z.object({
   content: z
@@ -30,8 +31,14 @@ const ContactCard = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    //TO send a message to the my database
-    console.log(values);
+    axios
+      .post("/api/messages", values)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
   return (
     <Form {...form}>
@@ -45,6 +52,9 @@ const ContactCard = () => {
               <FormControl>
                 <Input placeholder="Name/Nickname..." {...field} />
               </FormControl>
+              <FormDescription>
+                You can use a nickname if you wish to remain anonymous
+              </FormDescription>
               <FormMessage {...field} />
             </FormItem>
           )}
@@ -58,6 +68,7 @@ const ContactCard = () => {
               <FormControl>
                 <Textarea placeholder="Message..." {...field} />
               </FormControl>
+
               <FormMessage {...field} />
             </FormItem>
           )}
@@ -71,6 +82,9 @@ const ContactCard = () => {
               <FormControl>
                 <Textarea placeholder="Contact/mail (Optional)" {...field} />
               </FormControl>
+              <FormDescription>
+                Please leave a contact if you wish to get a response
+              </FormDescription>
               <FormMessage {...field} />
             </FormItem>
           )}
