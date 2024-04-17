@@ -11,16 +11,35 @@ datasource db {
  model Essay{
   id String @id @default(uuid())
   title String @unique 
+  description String?
   content String
-  author String
+  author String[]
   createdAt DateTime @default(now())
+  imgUrl String @unique @default("https://ibb.co/rFMB4ZJ")
+ }
+model Project{
+  id String @id @default(uuid())
+  title String @unique
+  description String?
+  author String[]
+  createdAt DateTime @default(now())
+  githubLink String?
+  liveLink String?
+  imgUrl String? @unique @default("https://ibb.co/rFMB4ZJ")
  }
 
+ model Stories{
+  id String @id @default(uuid())
+  story String
+  author String @default("Unknown")
+  source String @default("Unknown")
+  createdAt DateTime @default(now())
+ }
  model Message{
   id String @id @default(uuid())
-  sender String
+  sender String @default("Unknown")
   content String
-  contact String?  
+  contact String?
   createdAt DateTime @default(now())
  }
 

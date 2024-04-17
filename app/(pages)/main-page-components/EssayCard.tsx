@@ -1,12 +1,7 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@radix-ui/react-separator";
+
 interface EssayCardProps {
   title: string;
   description: string;
@@ -37,7 +32,6 @@ const EssayCard = (props: EssayCardProps) => {
           </CardDescription>
         </CardContent>
       </div>
-      <Separator orientation="horizontal" />
     </Card>
   );
 };

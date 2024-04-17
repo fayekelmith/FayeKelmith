@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        jade: "#0EB39E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

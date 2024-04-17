@@ -12,10 +12,20 @@ const NavBar = () => {
 
       <div className="hidden sm:block">
         <Link href="/projects" className="">
-          <Button variant="outline">Projects</Button>
+          <Button
+            variant="outline"
+            className="dark:border-slate-300 dark:border-2"
+          >
+            Projects
+          </Button>
         </Link>
-        <Link href="/essays" className="px-8">
-          <Button variant="outline">Essays</Button>
+        <Link href="/essays" className="px-8 ">
+          <Button
+            variant="outline"
+            className="dark:border-slate-300 dark:border-2"
+          >
+            Essays
+          </Button>
         </Link>
 
         {theme === "dark" ? (

@@ -16,9 +16,7 @@ const ProjectCard = () => {
       </CardContent>
       <CardFooter className="gap-x-4">
         <Button className="w-full">GitHub</Button>
-        <Button variant="destructive" className="w-full">
-          Live
-        </Button>
+        <Button className="w-full bg-jade">Live</Button>
       </CardFooter>
     </Card>
   );

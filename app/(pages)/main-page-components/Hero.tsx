@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Card } from "@/components/ui/card";
 const Hero = () => {
   return (
-    <header className="flex justify-center items-center min-w-full bg-slate-100 p-10">
+    <header className="flex justify-center items-center min-w-full bg-slate-100 p-10 dark:bg-slate-900 dark:text-slate-200">
       <div className="mx-auto">
         <h1 className="py-4">Hello,</h1>
         <h2>
@@ -18,7 +18,7 @@ const Hero = () => {
           alt="Faye Kelmith"
           width={400}
           height={400}
-          className=""
+          className="dark:bg-slate-800 opacity-80 rounded-xl"
         />
       </Card>
     </header>
