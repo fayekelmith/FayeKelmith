@@ -4,6 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "react-hot-toast";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -33,7 +34,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
+          <Toaster position="bottom-right" reverseOrder={false} />
           {children}
+
           <footer className="text-center py-4">
             <p>Design and spawn to life by me </p>
           </footer>

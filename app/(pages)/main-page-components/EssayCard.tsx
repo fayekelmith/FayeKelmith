@@ -1,37 +1,38 @@
 "use client";
-import { Card, CardContent, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-
-interface EssayCardProps {
+import {
+  Card,
+  CardFooter,
+  CardContent,
+  CardDescription,
+} from "@/components/ui/card";
+import Link from "next/link";
+import Image from "next/image";
+type EssayContent = {
+  id: string;
   title: string;
   description: string;
   imgurl: string;
-}
-import Image from "next/image";
-const EssayCard = (props: EssayCardProps) => {
+};
+const EssayCard = (props: EssayContent) => {
   return (
-    <Card className="p-8 bg-slate-100 shadow-sm hover:shadow-lg duration-700">
-      <div className="flex gap-x-8 items-center">
-        <CardContent>
-          <Image
-            src={props.imgurl}
-            alt="Essay Image"
-            width={150}
-            height={150}
-          />
-        </CardContent>
-        <CardContent>
-          <CardDescription>
-            <h2>{props.title}</h2>
-            <p>
-              {props.description.length > 100
-                ? props.description.slice(0, 100) + "..."
-                : props.description}
-            </p>
-            <Button className="items-end">Read More</Button>
-          </CardDescription>
-        </CardContent>
-      </div>
+    <Card className="flex flex-col justify-between hover:shadow-xl hover:scale-95 duration-700">
+      <CardContent className="p-4">
+        <Image
+          src={props.imgurl}
+          alt="Picture of the author"
+          width={300}
+          height={200}
+        />
+        <CardDescription className="mt-4">{props.description} </CardDescription>
+      </CardContent>
+      <CardFooter className="mb-0 py-0 h-16 bg-black text-slate-50 rounded-b-md hover:bg-slate-800 dark:bg-slate-500 dark:hover:bg-slate-900 font-bold">
+        <Link
+          className="text-center text-xl  w-full mx-0"
+          href={`/api/essays/${props.id}`}
+        >
+          {props.title}
+        </Link>
+      </CardFooter>
     </Card>
   );
 };

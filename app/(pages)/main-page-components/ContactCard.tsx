@@ -16,13 +16,14 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const formSchema = z.object({
   content: z
     .string({ required_error: "What would like me to know" })
     .min(2, { message: "Please send a longer message" }),
   sender: z.string().optional(),
-  contact: z.string().optional(),
+  contact: z.string().max(30, { message: "Contact too long" }).optional(),
 });
 
 const ContactCard = () => {
@@ -34,9 +35,13 @@ const ContactCard = () => {
     axios
       .post("/api/messages", values)
       .then((res) => {
-        console.log(res);
+        if (res.status === 200) {
+          toast.success("Message sent");
+          console.log("Sent");
+        }
       })
       .catch((err) => {
+        toast.error("Failed to send message");
         console.log(err);
       });
   }

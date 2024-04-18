@@ -15,7 +15,7 @@ datasource db {
   content String
   author String[]
   createdAt DateTime @default(now())
-  imgUrl String @unique @default("https://ibb.co/rFMB4ZJ")
+  imgUrl String? @default("https://ibb.co/rFMB4ZJ")
  }
 model Project{
   id String @id @default(uuid())
@@ -25,7 +25,7 @@ model Project{
   createdAt DateTime @default(now())
   githubLink String?
   liveLink String?
-  imgUrl String? @unique @default("https://ibb.co/rFMB4ZJ")
+  imgUrl String? @default("https://ibb.co/rFMB4ZJ")
  }
 
  model Stories{

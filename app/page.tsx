@@ -1,5 +1,6 @@
 import Hero from "./(pages)/main-page-components/Hero";
-import Updates from "./(pages)/main-page-components/Updates";
+import ProjectCardsHolder from "./(pages)/main-page-components/ProjectCardsHolder";
+import EssayCardsHolder from "./(pages)/main-page-components/EssayCardsHolder";
 import Stories from "./(pages)/main-page-components/Stories";
 import { Separator } from "@/components/ui/separator";
 import ContactCard from "./(pages)/main-page-components/ContactCard";
@@ -8,8 +9,11 @@ export default function Home() {
     <main className="custom-main ">
       <Hero />
 
-      <h1 className="my-8">My most recent Endeavours</h1>
-      <Updates />
+      <h1 className="my-8">Essays</h1>
+      <EssayCardsHolder />
+      <Separator className="my-4" />
+      <h1 className="my-8">Projects</h1>
+      <ProjectCardsHolder />
       <Separator className="my-4" />
       <h1 className="py-4">Excerpts and Anecdotes</h1>
       <Stories />

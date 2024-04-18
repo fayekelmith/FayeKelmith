@@ -1,4 +1,4 @@
-import EssayCard from "../main-page-components/EssayCard";
+import EssayCard from "./EssayCard";
 const data = {
   title: "Nihil Admirari",
   description:

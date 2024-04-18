@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-const Updates = () => {
+const ProjectCardsHolder = () => {
   return (
     <section className="min-w-full my-4">
       <div className="grid grid-cols-4 gap-x-8">
@@ -12,4 +12,4 @@ const Updates = () => {
   );
 };
 
-export default Updates;
+export default ProjectCardsHolder;
