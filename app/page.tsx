@@ -1,10 +1,37 @@
-import Image from "next/image";
-
+import Hero from "./(pages)/main-page-components/Hero";
+import ProjectCardsHolder from "./(pages)/main-page-components/ProjectCardsHolder";
+import EssayCardsHolder from "./(pages)/main-page-components/EssayCardsHolder";
+import Stories from "./(pages)/main-page-components/Stories";
+import { Separator } from "@/components/ui/separator";
+import ContactCard from "./(pages)/main-page-components/ContactCard";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Kelmith's Portfolio</h1>
-      <h2>Humble beginnings</h2>
+    <main className="custom-main ">
+      <Hero />
+
+      <h1 className="my-8">Essays</h1>
+      <EssayCardsHolder />
+      <Separator className="my-4" />
+      <h1 className="my-8">Projects</h1>
+      <ProjectCardsHolder />
+      <Separator className="my-4" />
+      <h1 className="py-4">Excerpts and Anecdotes</h1>
+      <Stories />
+      <Separator className="my-4" />
+      <h1 className="py-4">
+        <span>Ideas ? </span> <span>Issues ? </span> <span>Coffee ? </span>{" "}
+      </h1>
+      <div className="grid grid-cols-2 gap-x-8 items-center bg-slate-100 rounded-md my-4 shadow-md dark:bg-slate-900">
+        <div className=" bg-slate-300 h-full flex flex-col justify-center px-16 rounded-l-md dark:bg-slate-800">
+          <h2 className="">Let's Talk</h2>
+
+          <p className="py-4 text-xl">
+            If you have any questions, ideas, opportunities or just want to say
+            hi, feel free to drop me a message.
+          </p>
+        </div>
+        <ContactCard />
+      </div>
     </main>
   );
 }

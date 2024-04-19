@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        jade: "#0EB39E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -74,7 +75,8 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  // the second plugin is for markdown
 } satisfies Config;
 
 export default config;

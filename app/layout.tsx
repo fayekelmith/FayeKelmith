@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter as FontSans } from "next/font/google";
-import NavBar from "@/public/ui/components/NavBar";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "react-hot-toast";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -21,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        suppressHydrationWarning
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
@@ -34,7 +34,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
+          <Toaster position="bottom-right" reverseOrder={false} />
           {children}
+
+          <footer className="text-center py-4">
+            <p>Design and spawn to life by me </p>
+          </footer>
         </ThemeProvider>
       </body>
     </html>
