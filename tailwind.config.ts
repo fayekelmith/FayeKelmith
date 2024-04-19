@@ -75,7 +75,8 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  // the second plugin is for markdown
 } satisfies Config;
 
 export default config;

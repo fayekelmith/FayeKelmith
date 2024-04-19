@@ -29,7 +29,7 @@ const EssayCardsHolder = () => {
               key={essay.id}
               title={essay.title}
               description={essay.description}
-              imgurl="/images/work.svg"
+              imgurl={essay.imgUrl}
               id={essay.id}
             />
           );

@@ -1,5 +1,3 @@
-import Stories from "../main-page-components/Stories";
-import Updates from "../main-page-components/Updates";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
@@ -20,7 +18,7 @@ const Admin = () => {
           </Button>
         </div>
 
-        <Updates />
+        <h1>TO add updates</h1>
       </section>
       <section className="my-8">
         <div className="flex justify-between p-8">
@@ -35,7 +33,7 @@ const Admin = () => {
           </Button>
         </div>
 
-        <Updates />
+        <h1>To add Updates</h1>
       </section>
       <section className="my-8">
         <div className="flex justify-between p-8">
@@ -49,7 +47,7 @@ const Admin = () => {
             </Link>
           </Button>
         </div>
-        <Stories />
+        <h1>To add Stories</h1>
       </section>
     </main>
   );
