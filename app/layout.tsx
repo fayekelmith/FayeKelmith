@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter as FontSans } from "next/font/google";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/ui/segments/NavBar";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Toaster } from "react-hot-toast";
@@ -38,7 +38,7 @@ export default function RootLayout({
           {children}
 
           <footer className="text-center py-4">
-            <p>Design and spawn to life by me </p>
+            <p>The next time you show up, it will look better 🤞 </p>
           </footer>
         </ThemeProvider>
       </body>

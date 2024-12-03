@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { Button } from "./ui/button";
+import { Button } from "../button";
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
@@ -18,7 +18,7 @@ const NavBar = () => {
       </h1>
 
       <div className="hidden sm:block">
-        <Link href="/projects" className="">
+        {/* <Link href="/projects" className="">
           <Button
             variant="outline"
             className="dark:border-slate-300 dark:border-2"
@@ -33,7 +33,7 @@ const NavBar = () => {
           >
             Essays
           </Button>
-        </Link>
+        </Link> */}
 
         {mounted &&
           (theme === "dark" ? (
