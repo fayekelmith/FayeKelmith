@@ -37,6 +37,13 @@ const quotes: Quote[] = [
     author: "Excerpt from Skin in the Game by Nassim Nicholas Taleb",
     date: new Date("2024-12-05"),
   },
+  {
+    id: uuidv4(),
+    quote:
+      '"I will fail so many times, and I will be really right once", is the entrepreneur\' way',
+    author: "Sam Altman",
+    date: new Date("2024-12-09"),
+  },
 ];
 
 const FavouriteQuotes = () => {

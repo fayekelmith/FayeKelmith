@@ -1,2 +1,0 @@
--- AlterTable
-ALTER TABLE "Essay" ALTER COLUMN "imgUrl" DROP NOT NULL;

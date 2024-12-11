@@ -20,23 +20,6 @@ const NavBar = () => {
       </h1>
 
       <div className="hidden sm:block">
-        {/* <Link href="/projects" className="">
-          <Button
-            variant="outline"
-            className="dark:border-slate-300 dark:border-2"
-          >
-            Projects
-          </Button>
-        </Link>
-        <Link href="/essays" className="px-8 ">
-          <Button
-            variant="outline"
-            className="dark:border-slate-300 dark:border-2"
-          >
-            Essays
-          </Button>
-        </Link> */}
-
         {mounted &&
           (theme === "dark" ? (
             <Button onClick={() => setTheme("light")}>Light Mode</Button>

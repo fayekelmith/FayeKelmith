@@ -13,9 +13,17 @@ import Link from "next/link";
 const Essays = () => {
   return (
     <div className="mx-auto container w-full">
-      <h3 className="w-fit text-2xl md:text-4xl font-semibold">
-        Epistles to <TextGradient text="Faye Kelmith" />{" "}
-      </h3>
+      <div className="flex justify-between">
+        <h3 className="w-fit text-2xl md:text-4xl font-semibold">
+          Epistles to <TextGradient text="Faye Kelmith" />{" "}
+        </h3>
+        <Button className="">
+          <Link href="/essays" className="flex space-x-2 items-center">
+            <span className="text-lg">See all</span>
+            <MoveRight className="w-4 h-4 ml-4" />
+          </Link>
+        </Button>
+      </div>
       <div className="my-8 grid gap-4 md::grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardTitle className="my-3 text-center ">

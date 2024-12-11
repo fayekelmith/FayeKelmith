@@ -73,7 +73,7 @@ const Hero = () => {
               that guy who makes his peers feel like they are a failure&quot;
               Ironically, he is someone more achieving than I am by a mile;
               someone I deeply respect. The context is good-spirited and I love
-              it.I love it for what it makes of my friends to say so. It
+              it. I love it for what it makes of my friends to say so. It
               reassures me that I am in the <strong>right circle</strong>.
               People that are forward looking.
             </p>
