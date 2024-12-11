@@ -6,7 +6,7 @@ export const DiclaimerComponent = () => {
 };
 export const IncompleteWarningComponent = () => {
   return (
-    <div className="dark:bg-zinc-700 bg-zinc-200 w-full py-4 pl-8 my-4 rounded-sm text-lg">
+    <div className="dark:bg-zinc-700 bg-zinc-200 w-full py-4 pl-8 mb-8 rounded-sm text-lg">
       <h3>
         Disclaimer <span className="text-xl ml-2">⚠ </span>
       </h3>
