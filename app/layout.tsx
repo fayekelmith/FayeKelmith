@@ -35,9 +35,8 @@ export default function RootLayout({
         >
           <NavBar />
           <Toaster position="bottom-right" reverseOrder={false} />
-          {children}
-
-          <footer className="text-center py-4">
+          <main className="min-h-screen flex flex-row">{children}</main>
+          <footer className="text-center py-4 self-end">
             <p>The next time you show up, it will look better 🤞 </p>
           </footer>
         </ThemeProvider>

@@ -4,11 +4,11 @@ import Essays from "@/components/ui/segments/essays";
 import FavouriteQuotes from "@/components/ui/segments/favourite-quotes";
 export default function Home() {
   return (
-    <main className="custom-main ">
+    <div className="container mx-auto flex flex-col">
       <Hero />
       <FavouriteQuotes />
       <Essays />
-      <div className="mx-auto w-full text-center">
+      <section className="mx-auto w-full text-center">
         <h1 className="mb-10">
           Let&apos;s{" "}
           <span className="text-transparent bg-gradient-to-r from-jade to-teal-600 bg-clip-text inline-block ">
@@ -16,7 +16,7 @@ export default function Home() {
           </span>
         </h1>
         <Calendar />
-      </div>
-    </main>
+      </section>
+    </div>
   );
 }
