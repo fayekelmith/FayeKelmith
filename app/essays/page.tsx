@@ -2,8 +2,8 @@ import React from "react";
 
 const Essays = () => {
   return (
-    <div>
-      <h1>Essays</h1>
+    <div className="container mx-auto">
+      <h1>En travaile...</h1>
     </div>
   );
 };

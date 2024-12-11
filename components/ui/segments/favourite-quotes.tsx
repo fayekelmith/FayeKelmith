@@ -44,6 +44,13 @@ const quotes: Quote[] = [
     author: "Sam Altman",
     date: new Date("2024-12-09"),
   },
+  {
+    id: uuidv4(),
+    quote:
+      "What has been lost for the benefit of all must be be made up by the contribution of all",
+    author: "Rhodian law, an excerpt from Skin-in-the-game",
+    date: new Date("2024-12-11"),
+  },
 ];
 
 const FavouriteQuotes = () => {

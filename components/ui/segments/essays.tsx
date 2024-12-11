@@ -43,11 +43,7 @@ const Essays = () => {
             </CardDescription>
           </CardContent>
           <CardFooter className="text-center">
-            <Link
-              href="https://monogr.ph/674ec46fec3468250e63e83f"
-              target="_blank"
-              className="w-full inline-block"
-            >
+            <Link href="essays/agony" className="w-full inline-block">
               <Button variant="outline" size="lg">
                 Read <MoveRight className="w-4 h-4" />
               </Button>
