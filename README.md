@@ -2,4 +2,6 @@
 
 ### I write code and Essays.
 
-`...loading profile`
+I love the quote:
+
+`If you see me in a fight with a bear, pray for the bear ~ Black Mamba`
