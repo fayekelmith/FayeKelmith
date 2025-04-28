@@ -9,7 +9,7 @@ const TextGradient = ({ text, className }: TextGradientProps) => {
   return (
     <span
       className={cn(
-        "text-transparent bg-gradient-to-r from-jade to-teal-600 bg-clip-text inline-block",
+        "text-transparent bg-gradient-to-r from-coral to-lavender bg-clip-text inline-block",
         className
       )}
     >

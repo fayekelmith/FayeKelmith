@@ -30,7 +30,7 @@ const EssaysPage = () => {
       </div>
 
       <div className="grid gap-8">
-        {essays.map((essay) => (
+        {essays.reverse().map((essay) => (
           <Card key={essay.id} className="overflow-hidden">
             <div className="md:grid md:grid-cols-3 md:gap-4">
               {essay.image && (
@@ -53,7 +53,7 @@ const EssaysPage = () => {
                   <CardTitle className="text-2xl font-bold">
                     {essay.title}
                   </CardTitle>
-                  <div className="flex items-center text-sm text-muted-foreground mt-2">
+                  <div className="flex items-center text-sm text-muted-foreground mt-2 text-lavender">
                     <Calendar className="w-4 h-4 mr-2" />
                     {new Date(essay.date).toLocaleDateString("en-US", {
                       year: "numeric",
@@ -74,8 +74,8 @@ const EssaysPage = () => {
                     href={essay.url}
                     target={essay.url.startsWith("http") ? "_blank" : "_self"}
                   >
-                    <Button variant="default" size="lg">
-                      Read Essay <MoveRight className="w-4 h-4 ml-2" />
+                    <Button variant="default" className="text-md">
+                      Read
                     </Button>
                   </Link>
                 </CardFooter>

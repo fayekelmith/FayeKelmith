@@ -27,11 +27,9 @@ const Essays = () => {
         </Button>
       </div>
       <div className="my-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {essays.map((essay) => (
+        {[...essays].reverse().map((essay) => (
           <Card key={essay.id}>
-            <CardTitle className="my-3 text-center">
-              {essay.title}
-            </CardTitle>
+            <CardTitle className="my-3 text-center">{essay.title}</CardTitle>
             <CardContent>
               {essay.image && (
                 <Image

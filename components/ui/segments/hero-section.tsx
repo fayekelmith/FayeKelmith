@@ -5,20 +5,11 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-
-import { Unbounded } from "next/font/google";
+import { unbounded } from "@/lib/utils";
 import { motion } from "framer-motion";
-
-import { Pickaxe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const unbounded = Unbounded({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-  variable: "--font-unbounded",
-});
 const Hero = () => {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
@@ -47,11 +38,6 @@ const Hero = () => {
     <div className="w-full">
       <div className="container mx-auto">
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
-          {/* <div>
-            <Button variant="secondary" size="sm" className="gap-4">
-               <MoveRight className="w-4 h-4" />
-            </Button>
-          </div> */}
           <div className="flex gap-4 flex-col">
             <h1
               className={`text-5xl md:text-6xl max-w-2xl tracking-tighter text-center font-regular ${unbounded.className}`}
@@ -82,17 +68,16 @@ const Hero = () => {
                 ))}
               </span>
             </h1>
-
             <div className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              <h2 className="text-2xl">
-                Stuff about me that you probably don&pos;t need to know, but
+              <h2 className="text-xl mt-8">
+                Stuff about me that you probably don&apos;t need to know, but
                 now, you do! 😇
               </h2>
               <div className="py-6 ml-4 text-left text-xl">
                 <h3 className="my-4">
                   I am on a mission to become absolutely{" "}
-                  <span className="text-red-500 font-bold">Unhireable</span> by
-                  Dec 2025!
+                  <span className="text-coralplus font-bold">Unhireable</span>{" "}
+                  by Dec 2025!
                 </h3>
                 <h3 className=" my-4">
                   My friend and I are on a mission to build a business every 3
@@ -105,7 +90,7 @@ const Hero = () => {
           </div>
           <div>
             <h2 className="text-center w-full mb-4">
-              Some of my *significant work
+              Some of my significant* work
             </h2>
             <div className="flex flex-row gap-3 justify-center">
               <HoverCard>

@@ -11,7 +11,7 @@ export default function Home() {
       <section className="mx-auto w-full text-center">
         <h1 className="mb-10">
           Let&apos;s{" "}
-          <span className="text-transparent bg-gradient-to-r from-jade to-teal-600 bg-clip-text inline-block ">
+          <span className="text-transparent bg-gradient-to-r from-coral to-coralplus bg-clip-text inline-block ">
             Talk
           </span>
         </h1>

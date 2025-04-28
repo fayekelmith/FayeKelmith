@@ -19,7 +19,9 @@ const config = {
     },
     extend: {
       colors: {
-        jade: "#0EB39E",
+        coral: "#ff7f7f",
+        coralplus: "#ff6666",
+        lavender: "#C4B4FD",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
