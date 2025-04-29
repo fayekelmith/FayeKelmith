@@ -132,11 +132,65 @@ const Hero = () => {
                 </HoverCardTrigger>
                 <HoverCardContent className="w-96">
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-lg font-semibold">Vybedrop</h3>
+                    <h3 className="text-lg font-semibold">Testify</h3>
                     <p className="text-sm text-muted-foreground">
                       Testify is a testimonial collection, management and
                       distribution platform. it allows you to seamlessly convert
                       your customers&apos; stories into marketing assets.
+                    </p>
+                  </div>
+                </HoverCardContent>
+              </HoverCard>
+              <HoverCard>
+                <HoverCardTrigger asChild>
+                  <Link
+                    href="https://labs.nordahades.com/"
+                    target="_blank"
+                    className=""
+                  >
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="gap-4 bg-coral text-md font-semibold"
+                    >
+                      NH-Labs
+                    </Button>
+                  </Link>
+                </HoverCardTrigger>
+                <HoverCardContent className="w-96">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-lg font-semibold">NH-Labs</h3>
+                    <p className="text-sm text-muted-foreground">
+                      NH-Labs is a software development company. We build
+                      software for startups and small businesses. We are a team
+                      of 3.
+                    </p>
+                  </div>
+                </HoverCardContent>
+              </HoverCard>
+              <HoverCard>
+                <HoverCardTrigger asChild>
+                  <Link
+                    href="https://labs.nordahades.com/"
+                    target="_blank"
+                    className=""
+                  >
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="gap-4 text-md font-semibold"
+                    >
+                      AudacityHQ
+                    </Button>
+                  </Link>
+                </HoverCardTrigger>
+                <HoverCardContent className="w-96">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-lg font-semibold">AudacityHQ</h3>
+                    <p className="text-sm text-muted-foreground">
+                      AudacityHQ is a brand, a movement, a community my friend
+                      and I are building. It&apos;s ethos is to inspire peoplle
+                      to turn Nerves to Nitro.
                     </p>
                   </div>
                 </HoverCardContent>
